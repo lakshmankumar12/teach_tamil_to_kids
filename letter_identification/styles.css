@@ -19,3 +19,16 @@
     align-items: center;
     font-size: 4em;
 }
+
+.scorecard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 50px;
+}
+
+.scorecardItems {
+    background: #ffeead;
+    font-size: 20px;
+    text-align: center;
+}

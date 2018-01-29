@@ -2,6 +2,7 @@ var startBtnDom = $("#start_btn")
 var letterDom = $("#letter")
 var correctBtnDom = $("#correct_btn")
 var wrongBtnDom = $("#wrong_btn")
+var scorecardDom = $("#scorecard")
 var correctScoreDom = $("#correct_score")
 var wrongScoreDom = $("#wrong_score")
 var question_asked = 0;
@@ -55,6 +56,7 @@ function start() {
 function windup_question() {
     greyout_rightwrong();
     question_asked = 0;
+    scorecardDom.show();
     startBtnDom.focus();
 }
 
@@ -82,6 +84,7 @@ function check_wrong() {
 function init() {
     generate_letters();
     question_asked = 0;
+    scorecardDom.hide();
     greyout_rightwrong();
     startBtnDom.focus()
 }
