@@ -23,16 +23,16 @@ var wrong_letters = {};
 init();
 
 function greyout_rightwrong() {
-    correctBtnDom.removeClass('btn-success');
-    wrongBtnDom.removeClass('btn-warning');
-    correctBtnDom.addClass('btn-default');
-    wrongBtnDom.addClass('btn-default');
+    correctBtnDom.removeClass('active');
+    wrongBtnDom.removeClass('active');
+    correctBtnDom.addClass('disabled');
+    wrongBtnDom.addClass('disabled');
 }
 function enable_rightwrong() {
-    correctBtnDom.removeClass('btn-default');
-    wrongBtnDom.removeClass('btn-default');
-    correctBtnDom.addClass('btn-success');
-    wrongBtnDom.addClass('btn-warning');
+    correctBtnDom.removeClass('disabled');
+    wrongBtnDom.removeClass('disabled');
+    correctBtnDom.addClass('active');
+    wrongBtnDom.addClass('active');
 }
 
 function generate_letters() {
