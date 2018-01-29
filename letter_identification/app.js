@@ -60,6 +60,7 @@ function windup_question() {
 
 function check_correct() {
     if (!question_asked) {
+        windup_question();
         return;
     }
     score['correct'] += 1;
@@ -69,6 +70,7 @@ function check_correct() {
 
 function check_wrong() {
     if (!question_asked) {
+        windup_question();
         return;
     }
     score['wrong'] += 1;
@@ -81,6 +83,7 @@ function init() {
     generate_letters();
     question_asked = 0;
     greyout_rightwrong();
+    startBtnDom.focus()
 }
 
 
