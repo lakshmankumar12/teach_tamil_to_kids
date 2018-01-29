@@ -12,3 +12,10 @@
   grid-gap: 10px;
   padding: 50px;
 }
+
+#letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+}
