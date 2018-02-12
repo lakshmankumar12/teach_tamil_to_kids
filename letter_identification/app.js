@@ -77,8 +77,12 @@ function check_wrong() {
     }
     score['wrong'] += 1;
     wrongScoreDom.text(score['wrong']);
+    var l = letterDom.text();
+    if (! (l in wrong_letters) ){
+        wrong_letters[l] = 0;
+    }
+    wrong_letters[l] = wrong_letters[l] + 1;
     windup_question();
-    //wrong_letters[letterDom.text()] += 1;
 }
 
 function init() {

@@ -1,10 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #81ecec;
+}
+
 #top_container {
   display: grid;
   grid-template-columns: auto;
   grid-gap: 3px;
   padding: 50px;
+  max-width: 600px;
 }
-
 
 #result {
   display: grid;
@@ -13,11 +21,17 @@
   padding: 50px;
 }
 
+#question .heading {
+    font-size: 2em;
+}
+
 #letter {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 4em;
+    margin-left: 15%;
+    float: left;
 }
 
 .scorecard {
@@ -25,10 +39,26 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     padding: 50px;
+    font-size: 2em;
 }
 
 .scorecardItems {
-    background: #ffeead;
     font-size: 20px;
     text-align: center;
+}
+
+#correct_score {
+    background-color: #00b894;
+}
+
+#wrong_score {
+    background-color: #ff7675;
+}
+
+#correct_btn {
+    background-color: #00b894;
+}
+
+#wrong_btn {
+    background-color: #ff7675;
 }
